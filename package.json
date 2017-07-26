@@ -1,0 +1,17 @@
+{
+  "name": "emplayeelist",
+  "version": "1.0.0",
+  "description": "this is a test",
+  "dependencies": {
+    "jquery": "^1.12.4"
+  },
+  "scripts": {
+    "prestart": "npm install"
+  },
+  "author": "xuzhong",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine": "^2.6.0",
+    "requirejs": "^2.3.4"
+  }
+}
