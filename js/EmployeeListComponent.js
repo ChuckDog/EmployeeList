@@ -14,8 +14,8 @@ EmployeeListComponent.prototype.render = function(listData) {
 	that.$listContainer = $('<ul class="employeeList"></ul>');
 
 	// build the list table	
-	for(let i = 0, len = 10; i<len; i++) {
-		let $nameLi = $("<li class='name'><img src='img/arrow.png'>" + that.employeeName + (i + 1) + "</li>"),
+	for(var i = 0, len = 10; i<len; i++) {
+		var $nameLi = $("<li class='name'><img src='img/arrow.png'>" + that.employeeName + (i + 1) + "</li>"),
 			$bioLi = $("<li class='bio'>" + that.employeeBio + (i + 1) + "</li>");
 		that.$listContainer.append($nameLi).append($bioLi);
 	}
