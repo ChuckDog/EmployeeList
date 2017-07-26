@@ -7,3 +7,5 @@ This is a CRM Factory UI test. To build a Employee List component.
 2. Open the index.html. It will show the component.
 
 3. Open the test.html in the spec folder. There is the unit test of the component.
+
+4. run grunt to uglify the component code.
