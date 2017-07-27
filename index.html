@@ -9,6 +9,18 @@
 		<script type="text/javascript" src='node_modules/requirejs/require.js'></script>
 		<script type="text/javascript" src='js/EmployeeListComponent.js'></script>
 		<link rel='stylesheet' href='style/style.css'>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+
+				// there should have an ajax call and do the next in the callback
+				// listData mock json data
+				var listData,
+					employeeListComponent = new EmployeeListComponent();
+
+				employeeListComponent.render(listData);
+			});
+		</script>
 	
 	</head>
 

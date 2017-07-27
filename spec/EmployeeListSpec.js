@@ -76,4 +76,15 @@ describe('Employee List Spec', function() {
 			expect($secondNameLi.next().css('display')).toEqual('list-item');
 		}, 500);
 	});
+
+	it('should alert bio text, when click the bio', function() {
+
+		spyOn(window, 'alert');
+		employeeListComponent.render();
+		var $firstNameLi = $('ul.employeeList :first-child');
+		$firstNameLi.trigger('click');
+		expect($firstNameLi.next().css('display')).toEqual('list-item');
+		$firstNameLi.next().trigger('click');
+		expect(window.alert).toHaveBeenCalled();
+	});
 });

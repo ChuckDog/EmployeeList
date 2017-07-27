@@ -23,7 +23,7 @@ EmployeeListComponent.prototype.render = function(listData) {
 	$('#container').append(that.$listContainer[0]);
 
 	// bind events
-	$('li.name').on('click', function(e) {
+	that.$listContainer.find('li.name').on('click', function(e) {
 	
 		e.stopPropagation();
 		// Get next element
@@ -39,20 +39,10 @@ EmployeeListComponent.prototype.render = function(listData) {
 		img.toggleClass('rotate');
 	});
 
-	$('li.bio').on('click', function(e) {
+	that.$listContainer.find('li.bio').on('click', function(e) {
 
 		e.stopPropagation();
 		// Alert the Bio content in the alert box
 		alert($(this).text());
 	});
 }
-
-$(document).ready(function() {
-
-	// there should have an ajax call and do the next in the callback
-	// listData mock json data
-	var listData,
-		employeeListComponent = new EmployeeListComponent();
-
-	employeeListComponent.render(listData);
-});
